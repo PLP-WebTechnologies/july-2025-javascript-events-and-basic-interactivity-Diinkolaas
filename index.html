@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page Example</h1>
+    </header>
+
+    <main>
+        <!-- Part 1: Event Handling -->
+        <section id="events">
+            <h2>Event Handling</h2>
+            <button id="clickButton">Click Me!</button>
+            <p id="clickMessage"></p>
+            <input type="text" id="hoverInput" placeholder="Hover over me" />
+            <p id="hoverMessage"></p>
+        </section>
+
+        <!-- Part 2: Interactive Features -->
+        <section id="interactive">
+            <h2>Interactive Features</h2>
+
+            <!-- Feature 1: Light/Dark Mode -->
+            <button id="toggleTheme">Toggle Light/Dark Mode</button>
+
+            <!-- Feature 2: Counter -->
+            <div class="counter">
+                <p>Counter: <span id="count">0</span></p>
+                <button id="increment">Increment</button>
+                <button id="decrement">Decrement</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+                <span class="error" id="nameError"></span>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+                <span class="error" id="emailError"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+                <span class="error" id="passwordError"></span>
+
+                <button type="submit">Register</button>
+                <p id="formSuccess"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
